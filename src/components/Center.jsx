@@ -25,7 +25,6 @@ export default function Center({ children }) {
 		}
 
 		const updatedListOfStickyNotes = [...listOfStickyNotes, newStickyNote]
-		// let ids = updatedListOfStickyNotes.map(id => id.id)
 		setListOfStickyNotes(updatedListOfStickyNotes)
 	}
 
@@ -75,6 +74,7 @@ export default function Center({ children }) {
 					<textarea className='stickyNote__textarea'></textarea>
 				</div>
 			))}
+
 			{showMenu}
 		</section>
 	)
